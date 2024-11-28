@@ -96,6 +96,7 @@ void ComplexPlane::iterations_to_rgb(size_t count, sf::Uint8& r, sf::Uint8& g, s
     else if (count < 5) { r = 11, g = 14, b = 20;}
     else {
         float norm = static_cast<float>(count) / MAX_ITER;
+        norm += 0.10;
         r = 150 * norm, g = 40 * norm, b = 60 * norm;
     }
 }

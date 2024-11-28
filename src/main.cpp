@@ -69,6 +69,7 @@ int main() {
                 if (thread.joinable()) { thread.join(); }
             }
 
+            thread_pool.clear();
             plot.set_state(State::DISPLAYING);
         }
 
